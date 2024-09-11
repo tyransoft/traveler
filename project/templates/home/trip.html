@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+
+    
+    <div class="site-section">
+      <div class="container">
+        <h3>Trip to {{trip.country}}</h3>
+        <div class="row mb-3 align-items-stretch">        
+          <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
+            <div class="h-entry">
+              <img src="{{trip.image.url}}" alt="Image" class="img-fluid">
+
+              <div class="meta mb-4"><span class="mx-2">&bullet;</span>{{trip.date_posted}} <span class="mx-2">&bullet;</span></div>
+              <p>{{trip.content}}</p>
+            </div> 
+          </div>
+         
+        </div>
+        
+      </div>
+    </div>
+
+    
+  {% endblock %}
